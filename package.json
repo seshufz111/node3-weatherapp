@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/httpendpoints.js"
+    "start": "node src/httpendpoints.js",
+    "dev":"nodemon src/httpendpoints.js -e js,hbs"
     
   },
   "keywords": [],
