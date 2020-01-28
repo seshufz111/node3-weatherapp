@@ -12,7 +12,7 @@ const forecast = require('./Utils/forecast')
 //env is object
 
 const app =express()
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 3000
 
 const publicDirectorypath = path.join(__dirname, '../public')
 // Customizing the Views Directory
@@ -128,8 +128,8 @@ app.get('*', (req, res)=>{
 
 })
 
-a
+
 
 app.listen(port,()=>{
-    console.log('Port is listening' + port)
+    console.log('Port is listening ' + port)
 })
