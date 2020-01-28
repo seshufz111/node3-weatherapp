@@ -9,8 +9,11 @@ const forecast = require('./Utils/forecast')
 // console.log(__dirname)
 // console.log(path.join(__dirname, '../public'))
 //express method express.json(), express.static(),express.router(), express.urlencoded()
+//env is object
 
 const app =express()
+const port = process.env.PORT || 5000
+
 const publicDirectorypath = path.join(__dirname, '../public')
 // Customizing the Views Directory
 const viewsPath = path.join(__dirname,'../templates/views')
@@ -125,6 +128,8 @@ app.get('*', (req, res)=>{
 
 })
 
-app.listen(5000,()=>{
-    console.log('Port is listening 5000')
+a
+
+app.listen(port,()=>{
+    console.log('Port is listening' + port)
 })

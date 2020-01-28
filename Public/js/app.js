@@ -1,31 +1,32 @@
 
 
 
-console.log('Client SIde JavaScript is Loaded')
-console.log('Working')
+// console.log('Client SIde JavaScript is Loaded')
+// console.log('Working')
 
 // Browser HTTP Requests with Fetch
 // fetch is function api
 // fetch('http://puzzle.mead.io/puzzle').then((response)=>{
 //     response.json().then((data)=>{
 //         console.log(data)
+// fetch('http://localhost:5000/weather?address=!')
 //     })
 
 // })
 
 
-fetch('http://localhost:5000/weather?address=!').then((response)=>{
-    response.json().then((data)=>{
-        if(data.error){
-            console.log(data.error)
-        }
-        else{
-            console.log(data.location)
-            console.log(data.location)
-        }
-    })
+// fetch('/weather?address='+location).then((response)=>{
+//     response.json().then((data)=>{
+//         if(data.error){
+//             console.log(data.error)
+//         }
+//         else{
+//             console.log(data.location)
+//             console.log(data.location)
+//         }
+//     })
 
-})
+// })
 
 const weatherform = document.querySelector('form')
 const search = document.querySelector('input')
@@ -44,7 +45,7 @@ weatherform.addEventListener('submit',(e)=>{
     messageTwo.textContent=''
 
 
-    fetch('http://localhost:5000/weather?address='+location).then((response)=>{
+    fetch('/weather?address='+location).then((response)=>{
     response.json().then((data)=>{
         if(data.error){
            messageOne.textContent = data.error
