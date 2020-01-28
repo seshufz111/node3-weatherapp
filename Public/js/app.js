@@ -11,7 +11,7 @@ weatherform.addEventListener('submit',(e)=>{
     e.preventDefault()
     const location = search.value
 
-    messageOne.textContent ='Loading...'
+    messageOne.textContent ='Loading..'
     messageTwo.textContent=''
 
 
@@ -32,7 +32,7 @@ weatherform.addEventListener('submit',(e)=>{
 
 })
 
-// console.log('Client SIde JavaScript is Loaded')
+console.log('Client SIde JavaScript is Loaded')
 // console.log('Working')
 
 // Browser HTTP Requests with Fetch

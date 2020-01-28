@@ -13,7 +13,7 @@ body{
     font-family: cursive;
     max-width: 650px;
     margin: 0 auto;
-    padding: 0 16px;   
+    padding: 0 12px;   
 }
 .main-content {
     flex-grow: 1;
