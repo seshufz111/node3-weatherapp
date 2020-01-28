@@ -1,3 +1,4 @@
+console.log('Client SIde JavaScript is Loaded')
 const weatherform = document.querySelector('form')
 const search = document.querySelector('input')
 const messageOne = document.querySelector('#message-1')
@@ -15,7 +16,7 @@ weatherform.addEventListener('submit',(e)=>{
     messageTwo.textContent=''
 
 
-    fetch('/weather?address='+location).then((response)=>{
+    fetch('/weather?address='+ location).then((response)=>{
     response.json().then((data)=>{
         if(data.error){
            messageOne.textContent = data.error
@@ -32,7 +33,7 @@ weatherform.addEventListener('submit',(e)=>{
 
 })
 
-console.log('Client SIde JavaScript is Loaded')
+
 // console.log('Working')
 
 // Browser HTTP Requests with Fetch
