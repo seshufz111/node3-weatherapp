@@ -2,6 +2,7 @@
 
 
 console.log('Client SIde JavaScript is Loaded')
+console.log('Working')
 
 // Browser HTTP Requests with Fetch
 // fetch is function api
