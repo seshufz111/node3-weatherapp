@@ -9,7 +9,7 @@ app.get('', (req, res)=>{
     res.send('Welcome to Express')
 
 })
-app.get('/help', (req, res)=>{x
+app.get('/help', (req, res)=>{
     res.send('Welcome')
 
 })
